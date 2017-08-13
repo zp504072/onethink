@@ -6,7 +6,7 @@
  * Time: 14:57
  */
 
-namespace Admin\Model;
+namespace Home\Model;
 
 
 use Think\Model;

@@ -4196,3 +4196,236 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000536s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
 
+[ 2017-08-10T19:57:57+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.20454506542232997
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.012344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013907s ]
+
+[ 2017-08-10T19:58:04+08:00 ] 127.0.0.1 /index.php?s=/admin/property/index
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.025537s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.002680s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/index%' ) LIMIT 1   [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.005790s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 122 )  [ RunTime:0.001666s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000183s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.019498s ]
+SQL: SELECT * FROM `onethink_property` ORDER BY id asc  [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 5 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 93 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 124 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 126 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.237576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.237620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.015932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-08-10T19:58:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/add.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.012964s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000410s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/add%' ) LIMIT 1   [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 90 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 95 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.107471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-08-10T19:58:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002776s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.013892s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000282s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/add%' ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.009198s ]
+SQL: INSERT INTO `onethink_property` (`name`,`tel`,`address`,`problem`,`status`,`id`,`time`) VALUES ('214','421412','421412','41241',0,0,1502366291) [ RunTime:0.004001s ]
+
+[ 2017-08-10T19:58:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.013954s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000391s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/index%' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.008573s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 122 )  [ RunTime:0.000361s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000132s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.008687s ]
+SQL: SELECT * FROM `onethink_property` ORDER BY id asc  [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 5 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 93 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 124 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 126 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 124 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 126 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.094931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-08-10T19:58:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/del/id/6.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.019908s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000313s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/del%' ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.014609s ]
+SQL: DELETE FROM `onethink_property` WHERE ( `id` IN ('6') ) [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.030025s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_channel' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.021507s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES (9,1,2130706433,'channel',1502366298,'操作url：/index.php?s=/Admin/Property/del/id/6.html') [ RunTime:0.000293s ]
+
+[ 2017-08-10T19:58:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/del/id/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.024884s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000334s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/del%' ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.016195s ]
+SQL: DELETE FROM `onethink_property` WHERE ( `id` IN ('1') ) [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.012280s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_channel' ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.011343s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES (9,1,2130706433,'channel',1502366299,'操作url：/index.php?s=/Admin/Property/del/id/1.html') [ RunTime:0.000237s ]
+
+[ 2017-08-10T19:58:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.015160s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000366s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/index%' ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006125s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 122 )  [ RunTime:0.000431s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000224s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.010157s ]
+SQL: SELECT * FROM `onethink_property` ORDER BY id asc  [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 5 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 93 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.114593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-08-10T19:58:21+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/add.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.011884s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000479s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/add%' ) LIMIT 1   [ RunTime:0.000450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 90 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\40647068510dc272ed8b398a4ac66f8d.php 第 95 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.136577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002913s ]
+
+[ 2017-08-10T19:58:47+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.020747s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000387s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/add%' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.011023s ]
+SQL: INSERT INTO `onethink_property` (`name`,`tel`,`address`,`problem`,`status`,`id`,`time`) VALUES ('张大爷','12341255112','三栋16楼3号','下水道堵起了',0,0,1502366327) [ RunTime:0.000297s ]
+
+[ 2017-08-10T19:58:49+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.015008s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000374s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/index%' ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006770s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 122 )  [ RunTime:0.000457s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000179s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.008785s ]
+SQL: SELECT * FROM `onethink_property` ORDER BY id asc  [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 5 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 93 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 124 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 126 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.098939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-08-10T19:59:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/Property/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.014691s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000389s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Property/index%' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006364s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 122 )  [ RunTime:0.000403s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000205s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE ( `group` = '' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.012221s ]
+SQL: SELECT * FROM `onethink_property` ORDER BY id asc  [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: meta_title D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 5 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 93 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 124 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Admin\293539f7f107f0f1d20aeb0dfbb399fc.php 第 126 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.121829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+

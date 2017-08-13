@@ -2,6 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Application/Admin/Controller/PropertyController.class.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Application/Admin/View/Property/Index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Admin/View/Property/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Home/Controller/NoticeController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Home/Controller/PropertyController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Home/View/default/Notice/detail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Home/View/default/Property/index.html" charset="UTF-8" />
   </component>
 </project>

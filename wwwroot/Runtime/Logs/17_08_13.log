@@ -1,0 +1,192 @@
+[ 2017-08-13T09:29:46+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.023777s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.024294s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502587785 ) AND ( deadline = 0 OR deadline > 1502587785 ) ORDER BY `id` DESC  [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.230669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.230720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.012201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.007825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007870s ]
+
+[ 2017-08-13T09:29:53+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-08-13T09:29:58+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/index.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.010063s ]
+SQL: SELECT d.description,d.id,d.title,da.path,d.create_time,d.view FROM onethink_document d INNER JOIN onethink_picture da  ON d.id = da.id   [ RunTime:0.013018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-13T09:30:00+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/1.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.010072s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '1' )  [ RunTime:0.012463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2017-08-13T09:30:02+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/2.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012791s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '2' )  [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-08-13T09:30:03+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/5.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.007982s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '5' )  [ RunTime:0.000279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-13T09:30:06+08:00 ] 127.0.0.1 /index.php?s=/Home/Property/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: info D:\OneThink\wwwroot\Runtime\Cache\Home\08efe8eee5f4fd346562d023ea7e9db7.php 第 55 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Home\08efe8eee5f4fd346562d023ea7e9db7.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.071916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-08-13T09:30:09+08:00 ] 127.0.0.1 /index.php?s=/Home/Property/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: info D:\OneThink\wwwroot\Runtime\Cache\Home\08efe8eee5f4fd346562d023ea7e9db7.php 第 55 行.
+NOTIC: [8] Undefined variable: pid D:\OneThink\wwwroot\Runtime\Cache\Home\08efe8eee5f4fd346562d023ea7e9db7.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-08-13T09:32:46+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/index.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012229s ]
+SQL: SELECT d.description,d.id,d.title,da.path,d.create_time,d.view FROM onethink_document d INNER JOIN onethink_picture da  ON d.id = da.id   [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-08-13T09:32:47+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/1.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.009295s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '1' )  [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-08-13T09:32:49+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/2.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.009852s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '2' )  [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-08-13T09:32:50+08:00 ] 127.0.0.1 /index.php?s=/Home/Notice/detail/id/5.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.008633s ]
+SQL: SELECT d.id,d.title,da.content,d.create_time FROM onethink_document d INNER JOIN onethink_document_article da  ON d.id = da.id  WHERE ( d.id = '5' )  [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+

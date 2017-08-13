@@ -6,12 +6,12 @@
  * Time: 14:18
  */
 
-namespace Admin\Controller;
+namespace Home\Controller;
 
 
 use Think\Page;
 
-class PropertyController extends AdminController
+class PropertyController extends HomeController
 {
     public function index()
     {
@@ -21,6 +21,7 @@ class PropertyController extends AdminController
         $Page=new Page($count,2);
         $show=$Page->show();
         $list=$model->limit($Page->firstRow.','.$Page->listRows)->select();
+        //var_dump($list);exit;
         $this->assign('list', $list);
         $this->assign('page',$show);
         $this->display();
@@ -34,7 +35,7 @@ class PropertyController extends AdminController
             if ($data) {
                 $id = $Property->add();
                 if ($id) {
-                    $this->success('新增成功', U('index'));
+                    $this->success('新增成功', U('Index/index'));
                     //记录行为
                     action_log('update_channel', 'channel', $id, UID);
                 } else {
